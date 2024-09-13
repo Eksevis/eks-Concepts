@@ -1,0 +1,12 @@
+[node_mesh_index]
+{
+	0x0010053f = t_xxx_cnr_04-ccav;
+	0x00100540 = t_xxx_cnr_04-cnvx;
+	0x00100541 = t_xxx_cnr_08-ccav;
+	0x0010055b = t_xxx_cnr_tee-04-04-08-l;
+	0x0010055c = t_xxx_cnr_tee-04-04-08-r;
+	0x001006aa = t_xxx_flr_08x08-v0;
+	0x001009f6 = t_xxx_wal_04-diag-thick-r;
+	0x00100a11 = t_xxx_wal_08-thin;
+	0x00100c8f = t_grs01_houses_stone-chapel-a;
+}

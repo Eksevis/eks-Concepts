@@ -1,0 +1,57 @@
+[t:utraean_priest_ferdl,n:0x00100001]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("b1_collect","active",1);
+				action* = send_world_message("we_got",0x0010000C,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_first_message");
+				condition* = receive_world_message("we_req_talk_end",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+			[*]
+			{
+				action* = send_world_message("we_got",0x0010000D,0f,"default","single",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_talk_end",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = get_me_books;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.771625,0,0.636078;
+	  p position = -6.95844,-1,1.46218,0xaaa7228a;
+	}
+}

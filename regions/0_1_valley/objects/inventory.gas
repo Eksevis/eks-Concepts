@@ -1,0 +1,62 @@
+[t:book_glb_lore_stonebridge_2,n:0x0010000c]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("b1_collect","active",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_picked_up",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 2.0501,-2,-0.290415,0xaaa7228a;
+	}
+}
+[t:book_glb_lore_stonebridge_2,n:0x0010000d]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	  b is_visible = false;
+	}
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("b1_collect","active",1);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_entered_world",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0,0.707107,-0.707107;
+	  p position = 1.33116,-1.35458,3.17721,0xaaa7228a;
+	}
+}

@@ -1,0 +1,36 @@
+[chapters]
+{
+	[c1_bookcollector]
+	{
+		screen_name = chapter 1: book collector;
+		[*]
+		{
+			description = collect books;
+		  i order = 0;
+		}
+	}
+}
+[quests]
+{
+	[b1_collect]
+	{
+		chapter = c1_bookcollector;
+		screen_name = collect death of etan stonebridge;
+		[*]
+		{
+			description = pick the book up;
+		  b is_consumable = false;
+		  i order = 0;
+		  b required = false;
+			speaker = ;
+		}
+		[*]
+		{
+			description = give it to the priest;
+		  b is_consumable = false;
+		  i order = 1;
+		  b required = false;
+			speaker = ;
+		}
+	}
+}

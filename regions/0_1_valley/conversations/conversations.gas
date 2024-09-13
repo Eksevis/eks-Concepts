@@ -1,0 +1,12 @@
+[get_me_books]
+{
+	[text*]
+	{
+		choice = shop;
+		complete_quest* = b1_collect;
+	  i order = 0;
+	  b quest_dialog = true;
+		screen_text = "Talk to me to give me your books.";
+	  f scroll_rate = 10.000000;
+	}
+}
